@@ -5,7 +5,7 @@ from datetime import datetime
 
 # Set your API key securely
 
-openai.api_key = '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'
+openai.api_key = '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'
 
 
 # Ensure you have your own image and mask image in the same directory as this script
@@ -16,7 +16,7 @@ mask_path = "/Users/asfandyarkhan/Desktop/Independent Study Repo/Interior-Shuffl
 response = openai.Image.create_edit(
     image=open(image_path, "rb"),
     mask=open(mask_path, "rb"),
-    prompt="Add some cool art pieces on the wall on the right (given mask), add a chandelier to the top (mask given), furthermore make sure they are realistic and not animated objects they should fit with the real actual photograph i gave you of an apartment",  # Update prompt as needed
+    prompt="add beautiful wooden floors, some chairs that will fit the colour tone, and a coffee table. Arrange the furniture optimally and for the best interior design look. ",  # Update prompt as needed
     n=1,
     size="256x256"
 )
