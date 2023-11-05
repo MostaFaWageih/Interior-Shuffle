@@ -1,6 +1,6 @@
 const express = require('express');
-const uploadRoutes = require('./routes/upload');
-const redesignRoutes = require('./routes/redesign');
+const uploadRoutes = require('./scripts/upload');
+const redesignRoutes = require('./scripts/redesign');
 
 const app = express();
 app.use('/upload', uploadRoutes);
